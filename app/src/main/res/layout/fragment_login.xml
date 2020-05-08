@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.userCycle.LoginFragment"
+    android:layoutDirection="ltr"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_15dp"
+            android:layout_marginEnd="@dimen/dim_15dp">
+
+            <ImageView
+                android:id="@+id/login_fragment_iv_logo"
+                android:layout_width="@dimen/dim_250dp"
+                android:layout_height="@dimen/dim_250dp"
+                android:layout_marginStart="@dimen/dim_70dp"
+                android:src="@drawable/ic_logo_white" />
+
+            <EditText
+                android:id="@+id/login_fragment_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@+id/login_fragment_iv_logo"
+                android:background="@drawable/shape_edit_text"
+                android:layout_marginTop="@dimen/dim_20dp"
+                android:hint="@string/phone"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red_transparent"
+                android:padding="@dimen/dim_15dp"/>
+
+            <EditText
+                android:id="@+id/login_fragment_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_below="@+id/login_fragment_et_phone"
+                android:background="@drawable/shape_edit_text"
+                android:layout_marginTop="@dimen/dim_20dp"
+                android:hint="@string/password"
+                android:textColor="@color/red"
+                android:textColorHint="@color/red_transparent"
+                android:padding="@dimen/dim_15dp"/>
+
+
+            <RelativeLayout
+                android:id="@+id/login_fragment_rl_forget_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_fragment_et_password"
+                android:layout_marginTop="@dimen/dim_10dp">
+
+                <CheckBox
+                    android:id="@+id/login_fragment_cb_remember_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/remember"
+                    android:textColor="@color/white"
+                    android:button="@null"
+                    android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+                    android:drawableTint="@color/white"/>
+
+                <TextView
+                    android:id="@+id/login_fragment_tv_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/do_you_forget_password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dim_15dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login_fragment_btn_login"
+                android:layout_below="@id/login_fragment_rl_forget_pass"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_30dp"
+                android:background="@drawable/shape_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_50dp"
+                android:text="@string/login"
+                android:textColor="@color/red"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dim_40dp"
+       android:layout_alignParentBottom="true"
+       android:background="@color/gray">
+
+       <TextView
+           android:id="@+id/login_fragment_tv_sign_up"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textColor="@color/red"
+           android:text="@string/sign_up_from_here"/>
+
+   </RelativeLayout>
+
+</RelativeLayout>

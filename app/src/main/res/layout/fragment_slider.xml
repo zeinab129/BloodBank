@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider_fragment_vp_slides"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/slider_fragment_rl_navigation_bar"
+        android:layout_marginBottom="@dimen/dim_10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/slider_fragment_rl_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/slider_fragment_ll_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dim_10dp"
+            android:orientation="horizontal"/>
+
+        <ImageButton
+            android:id="@+id/slider_fragment_ib_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_next"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim_10dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

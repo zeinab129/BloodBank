@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.AboutAppFragment"
+    android:padding="@dimen/dim_20dp">
+
+    <TextView
+        android:id="@+id/about_app_fragment_tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edit_text"
+        android:textColor="@color/red"
+        android:textSize="@dimen/dim_20sp"
+        android:padding="@dimen/dim_15dp"/>
+</RelativeLayout>

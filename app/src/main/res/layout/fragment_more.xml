@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.MoreFragment"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/more_fragment_tv_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_filled_heart"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/favorites"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1dp"
+                style="@style/view"/>
+
+            <TextView
+                android:id="@+id/more_fragment_tv_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_email"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/contact_us"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1dp"
+                style="@style/view"/>
+
+            <TextView
+                android:id="@+id/more_fragment_tv_about_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_about_app"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/about_app"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1dp"
+                style="@style/view"/>
+
+            <TextView
+                android:id="@+id/more_fragment_tv_rate_app_on_store"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_star"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/rate_app_on_store"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1dp"
+                style="@style/view"/>
+
+            <TextView
+                android:id="@+id/more_fragment_tv_notifications_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_setting"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/notifications_settings"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1dp"
+                style="@style/view"/>
+
+            <TextView
+                android:id="@+id/more_fragment_tv_sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_sign_out"
+                android:textSize="@dimen/dim_20sp"
+                android:text="@string/sign_out"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:padding="@dimen/dim_8dp"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

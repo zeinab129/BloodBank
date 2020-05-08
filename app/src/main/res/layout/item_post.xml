@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_300dp"
+    android:layout_margin="@dimen/dim_8dp"
+    android:background="@drawable/shape_post"
+    android:id="@+id/post_item_rl_layout">
+
+
+    <ImageView
+        android:id="@+id/post_item_iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/post_item_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_post_title"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/dim_20sp"
+        android:text="title"
+        android:gravity="center"
+        android:padding="@dimen/dim_4dp"
+        android:textColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/post_item_ib_favorite"
+        android:layout_width="@dimen/dim_40dp"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginTop="@dimen/dim_15dp"
+        android:layout_marginEnd="@dimen/dim_10dp"
+        android:background="@drawable/shape_circle_white"
+        android:src="@drawable/ic_empt_heart"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

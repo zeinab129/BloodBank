@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.CreateDonationFragment">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/create_donation_fragment_tool_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@+id/create_donation_fragment_tool_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_10dp"
+            android:layout_marginEnd="@dimen/dim_10dp">
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_15dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/name" />
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_age"
+                android:layout_below="@+id/create_donation_fragment_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/age" />
+
+            <RelativeLayout
+                android:id="@+id/create_donation_fragment_rl_blood_type_layout"
+                android:layout_below="@+id/create_donation_fragment_et_age"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:paddingStart="@dimen/dim_15dp"
+                android:paddingEnd="@dimen/dim_15dp">
+
+                <Spinner
+                    android:id="@+id/create_donation_fragment_sp_blood_type_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/create_donation_fragment_iv_blood_type_image"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:layout_marginEnd="@dimen/dim_4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:id="@+id/create_donation_fragment_iv_blood_type_image"
+                    android:layout_width="@dimen/dim_16dp"
+                    android:layout_height="@dimen/dim_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_drop_down"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_bags_num"
+                android:layout_below="@+id/create_donation_fragment_rl_blood_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/bags_num" />
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_hospital_name"
+                android:layout_below="@+id/create_donation_fragment_et_bags_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/hospital_name" />
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_hospital_address"
+                android:layout_below="@+id/create_donation_fragment_et_hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/hospital_address"
+                android:drawableEnd="@drawable/ic_compass"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:clickable="true"
+                android:maxLines="1"/>
+
+            <RelativeLayout
+                android:id="@+id/create_donation_fragment_rl_government_layout"
+                android:layout_below="@+id/create_donation_fragment_et_hospital_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:paddingStart="@dimen/dim_15dp"
+                android:paddingEnd="@dimen/dim_15dp">
+
+                <Spinner
+                    android:id="@+id/create_donation_fragment_sp_government_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/create_donation_fragment_iv_government_image"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:layout_marginEnd="@dimen/dim_4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:id="@+id/create_donation_fragment_iv_government_image"
+                    android:layout_width="@dimen/dim_16dp"
+                    android:layout_height="@dimen/dim_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_drop_down"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/create_donation_fragment_rl_city_layout"
+                android:layout_below="@+id/create_donation_fragment_rl_government_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:paddingStart="@dimen/dim_15dp"
+                android:paddingEnd="@dimen/dim_15dp">
+
+                <Spinner
+                    android:id="@+id/create_donation_fragment_sp_city_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/create_donation_fragment_iv_city_image"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:layout_marginEnd="@dimen/dim_4dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+                <ImageView
+                    android:id="@+id/create_donation_fragment_iv_city_image"
+                    android:layout_width="@dimen/dim_16dp"
+                    android:layout_height="@dimen/dim_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_drop_down"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_phone_number"
+                android:layout_below="@+id/create_donation_fragment_rl_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/phone_number" />
+
+            <EditText
+                android:id="@+id/create_donation_fragment_et_notes"
+                android:layout_below="@+id/create_donation_fragment_et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:background="@drawable/shape_edit_text"
+                android:padding="@dimen/dim_15dp"
+                android:textColorHint="@color/red_transparent"
+                android:textColor="@color/red"
+                android:hint="@string/notes"
+                android:gravity="top"/>
+
+            <Button
+                android:id="@+id/create_donation_fragment_btn_send"
+                android:layout_below="@id/create_donation_fragment_et_notes"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_20dp"
+                android:layout_marginBottom="@dimen/dim_15dp"
+                android:background="@drawable/shape_button_red"
+                android:textColor="@color/white"
+                android:text="@string/send"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.NotificationSettingsFragment"
+    android:layout_marginEnd="@dimen/dim_10dp"
+    android:layout_marginStart="@dimen/dim_10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/notification_settings_fragment_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_edit_text"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:padding="@dimen/dim_15dp"
+                android:textColor="@color/red"
+                android:textSize="@dimen/dim_16sp"
+                android:text="@string/notification_settings_title"/>
+
+            <RelativeLayout
+                android:id="@+id/notification_settings_fragment_rel_bloods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_settings_fragment_tv_title"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_10dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+                <RelativeLayout
+                    android:id="@+id/notification_settings_fragment_rel_bloods_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_150dp"
+                    android:layout_marginTop="@dimen/dim_16dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:paddingStart="@dimen/dim_8dp"
+                    android:paddingTop="@dimen/dim_24dp"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/notification_settings_fragment_rv_blood_types"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notification_settings_fragment_rel_blood_types"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_35dp"
+                    android:background="@drawable/shape_orange">
+
+                    <ImageView
+                        android:id="@+id/notification_settings_fragment_iv_blood_types_plus_minus"
+                        android:layout_width="@dimen/dim_20dp"
+                        android:layout_height="@dimen/dim_20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dim_12dp"
+                        android:src="@drawable/ic_plus_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dim_12dp"
+                        android:layout_toEndOf="@id/notification_settings_fragment_iv_blood_types_plus_minus"
+                        android:text="@string/blood_type"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim_20sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notification_settings_fragment_rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notification_settings_fragment_rel_bloods"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:layout_marginTop="@dimen/dim_24dp"
+                android:layout_marginEnd="@dimen/dim_8dp">
+
+                <RelativeLayout
+                    android:id="@+id/notification_settings_fragment_rel_governorates_gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_150dp"
+                    android:layout_marginTop="@dimen/dim_16dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:paddingStart="@dimen/dim_8dp"
+                    android:paddingTop="@dimen/dim_24dp"
+                    android:paddingEnd="@dimen/dim_8dp"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/notification_settings_fragment_rv_governorates"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notification_settings_fragment_rel_governorates"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_35dp"
+                    android:background="@drawable/shape_orange">
+
+                    <ImageView
+                        android:id="@+id/notification_settings_fragment_iv_governments_plus_minus"
+                        android:layout_width="@dimen/dim_20dp"
+                        android:layout_height="@dimen/dim_20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dim_12dp"
+                        android:src="@drawable/ic_plus_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dim_12dp"
+                        android:layout_toEndOf="@id/notification_settings_fragment_iv_governments_plus_minus"
+                        android:text="@string/government"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dim_20sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/notification_settings_fragment_btn_save"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:layout_below="@id/notification_settings_fragment_rel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_orange"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/dim_20dp"
+                android:layout_marginBottom="@dimen/dim_10dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

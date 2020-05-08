@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.PostDetailsFragment">
+    
+    <ImageView
+        android:id="@+id/post_details_fragment_im_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_300dp"/>
+
+    <RelativeLayout
+        android:layout_below="@+id/post_details_fragment_im_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dim_n_50dp"
+        android:background="@drawable/shape_post_details">
+
+        <ImageButton
+            android:id="@+id/post_details_fragment_ib_favorite"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginTop="@dimen/dim_15dp"
+            android:layout_marginLeft="@dimen/dim_10dp"
+            android:background="@drawable/shape_circle_white"
+            android:src="@drawable/ic_empt_heart"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/post_details_fragment_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_15dp"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dim_14sp"/>
+
+        <TextView
+            android:id="@+id/post_details_fragment_tv_content"
+            android:layout_below="@id/post_details_fragment_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

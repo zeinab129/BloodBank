@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:id="@+id/donation_item_srl_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dim_4dp"
+    android:layout_marginEnd="@dimen/dim_4dp"
+    android:layout_marginStart="@dimen/dim_4dp"
+    android:background="@null"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/donation_item_ib_call"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@drawable/shape_circle_orange"
+            android:src="@drawable/ic_call"/>
+        <ImageButton
+            android:id="@+id/donation_item_ib_info"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@drawable/shape_circle_red"
+            android:src="@drawable/ic_info"/>
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_100dp"
+            android:layout_toEndOf="@+id/donation_item_tv_blood_type_text"
+            android:layout_marginStart="@dimen/dim_n_50dp"
+            android:background="@drawable/shape_donation_details"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/donation_item_tv_patient_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/donation_item_text"/>
+            <TextView
+                android:id="@+id/donation_item_tv_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/donation_item_text"/>
+            <TextView
+                android:id="@+id/donation_item_tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/donation_item_text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/donation_item_tv_blood_type_text"
+            android:layout_width="@dimen/dim_100dp"
+            android:layout_height="@dimen/dim_100dp"
+            android:background="@drawable/shape_circle_red"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_35sp"
+            android:text="AB+"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        
+    </RelativeLayout>
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

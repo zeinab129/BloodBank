@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="bottom_navigation">
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/dim_n_8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="bottom_navigation_select">
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginStart">@dimen/dim_24dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_24dp</item>
+        <item name="android:layout_marginBottom">@dimen/dim_4dp</item>
+        <item name="android:background">@color/gray_dark</item>
+    </style>
+
+    <style name="donation_item_text">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/dim_14sp</item>
+        <item name="android:layout_marginBottom">@dimen/dim_4dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_20dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_55dp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="text_view">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:layout_marginTop">@dimen/dim_4dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_12dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_12dp</item>
+        <item name="android:textSize">@dimen/dim_16sp</item>
+        <item name="android:paddingTop">@dimen/dim_8dp</item>
+        <item name="android:paddingStart">@dimen/dim_4dp</item>
+        <item name="android:paddingEnd">@dimen/dim_4dp</item>
+        <item name="android:paddingBottom">@dimen/dim_8dp</item>
+    </style>
+
+    <style name="text_view2">
+        <item name="android:background">@drawable/shape_edit_text</item>
+        <item name="android:textColor">@color/note</item>
+        <item name="android:layout_marginTop">@dimen/dim_4dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_8dp</item>
+        <item name="android:textSize">@dimen/dim_16sp</item>
+        <item name="android:padding">@dimen/dim_8dp</item>
+    </style>
+
+    <style name="view">
+        <item name="android:background">@color/view_color</item>
+        <item name="android:layout_marginTop">@dimen/dim_8dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_8dp</item>
+        <item name="android:padding">@dimen/dim_4dp</item>
+    </style>
+
+</resources>
