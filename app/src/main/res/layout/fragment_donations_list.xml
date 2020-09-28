@@ -109,7 +109,8 @@
         android:layout_below="@id/donation_list_fragment_rl_filter"
         android:layout_marginTop="@dimen/dim_4dp"
         android:layout_marginEnd="@dimen/dim_4dp"
-        android:layout_marginStart="@dimen/dim_4dp"/>
+        android:layout_marginStart="@dimen/dim_4dp"
+        tools:listitem="@layout/item_donation"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/donations_list_fragment_f_a_btn_create_donation"

@@ -224,12 +224,12 @@ public class RegisterAndEditProfileFragment extends BaseFragment {
                 registerAndEditProfileFragmentSpBloodType.setSelection(bloodTypesSelectedId);
                 registerAndEditProfileFragmentSpGovernment.setSelection(governmentSelectedId);
 
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        registerAndEditProfileFragmentSpCity.setSelection(citiesSelectedId);
-                    }
-                }, 1000);
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        registerAndEditProfileFragmentSpCity.setSelection(citiesSelectedId);
+//                    }
+//                }, 2000);
             }
         }, 2000);
 

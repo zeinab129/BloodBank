@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
 
     private static Retrofit retrofit = null;
-    private static String BASE_URL = "http://ipda3-tech.com/blood-bank/api/v1/";
+    private static String BASE_URL = "https://ipda3-tech.com/blood-bank/api/v1/";
 
 
     public static ApiService getClient(){
