@@ -139,12 +139,13 @@
             <EditText
                 android:id="@+id/contact_us_fragment_et_msg_title"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/dim_50dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/shape_edit_text"
                 android:layout_marginTop="@dimen/dim_15dp"
                 android:hint="@string/message_title"
                 android:textColor="@color/orange"
                 android:textColorHint="@color/orange_transparent"
+                android:maxLines="1"
                 android:paddingTop="@dimen/dim_10dp"
                 android:paddingBottom="@dimen/dim_10dp"
                 android:paddingEnd="@dimen/dim_15dp"
@@ -165,15 +166,26 @@
                 android:textColorHint="@color/orange_transparent"
                 android:textColor="@color/orange"/>
 
-            <Button
-                android:id="@+id/contact_us_fragment_btn_msg_send"
-                android:layout_width="@dimen/dim_150dp"
-                android:layout_height="@dimen/dim_35dp"
-                android:background="@drawable/shape_button_red"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dim_15dp"
                 android:layout_marginBottom="@dimen/dim_15dp"
-                android:text="@string/send"
-                android:textColor="@color/white"/>
+                android:weightSum="3"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/contact_us_fragment_btn_msg_send"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_button_red"
+                    android:text="@string/send"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
 
 
         </LinearLayout>
