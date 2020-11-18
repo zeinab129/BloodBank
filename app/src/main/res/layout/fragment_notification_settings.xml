@@ -60,8 +60,7 @@
                 <RelativeLayout
                     android:id="@+id/notification_settings_fragment_rel_blood_types"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/dim_8dp"
+                    android:layout_height="@dimen/dim_35dp"
                     android:background="@drawable/shape_orange">
 
                     <ImageView
@@ -117,8 +116,7 @@
                 <RelativeLayout
                     android:id="@+id/notification_settings_fragment_rel_governorates"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="@dimen/dim_8dp"
+                    android:layout_height="@dimen/dim_35dp"
                     android:background="@drawable/shape_orange">
 
                     <ImageView
@@ -143,25 +141,17 @@
 
             </RelativeLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="5"
-                android:gravity="center"
+            <Button
+                android:id="@+id/notification_settings_fragment_btn_save"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:layout_below="@id/notification_settings_fragment_rel"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_orange"
+                android:text="@string/save"
+                android:textColor="@color/white"
                 android:layout_marginTop="@dimen/dim_20dp"
-                android:layout_marginBottom="@dimen/dim_10dp"
-                android:layout_below="@id/notification_settings_fragment_rel">
-
-                <Button
-                    android:id="@+id/notification_settings_fragment_btn_save"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:background="@drawable/shape_orange"
-                    android:text="@string/save"
-                    android:textColor="@color/white"/>
-
-            </LinearLayout>
+                android:layout_marginBottom="@dimen/dim_10dp"/>
 
         </RelativeLayout>
 
